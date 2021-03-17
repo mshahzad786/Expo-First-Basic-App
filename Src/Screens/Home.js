@@ -1,0 +1,38 @@
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View, Image, Button } from 'react-native';
+
+export default function Home({ navigation }) {
+  return (
+    <View style={styles.container}>
+        
+        <Button
+        title="Logout" 
+        onPress={() => navigation.navigate('Login')}
+      />
+        <Text>Home Page</Text>
+      <Image 
+      style={{width: 200, height: 200, resizeMode: 'contain'  }} 
+      source={ {uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_fstLlGCp8TFFvEy3gLmAwOvttrHPiL8eNQ&usqp=CAU.png"}}
+      />
+      <Image 
+      style={{width: 200, height: 200, resizeMode: 'contain'  }} 
+      source={ {uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_fstLlGCp8TFFvEy3gLmAwOvttrHPiL8eNQ&usqp=CAU.png"}}
+      />
+      <Image 
+      style={{width: 200, height: 200, resizeMode: 'contain'  }} 
+      source={ {uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_fstLlGCp8TFFvEy3gLmAwOvttrHPiL8eNQ&usqp=CAU.png"}}
+      />
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
