@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, Button } from 'react-native';
-import FloatingLabel from '../component/input'
+
 
 export default function Login({ navigation }) {
   return (
@@ -12,7 +12,7 @@ export default function Login({ navigation }) {
       />
       <View>
 
-      <FloatingLabel/>
+      
       </View>
       
         {/* <TextInput style={styles.input}
