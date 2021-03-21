@@ -39,10 +39,6 @@ export default function Camra({ navigation }) {
         </View>
       </Camera>
         
-        {/* <Button
-        title="Logout" 
-        onPress={() => navigation.navigate('Login')}
-      /> */}
       
     </View>
   );
