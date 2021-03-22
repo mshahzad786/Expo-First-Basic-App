@@ -1,8 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, View, Image, Button } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Camera } from 'expo-camera';
 
-export default function Camra({ navigation }) {
+export default function Camra() {
   const [hasPermission, setHasPermission] = useState(null);
   const [type, setType] = useState(Camera.Constants.Type.back);
 
@@ -19,10 +19,8 @@ export default function Camra({ navigation }) {
   if (hasPermission === false) {
     return <Text>No access to camera</Text>;
   }
-
   return (
     <View style={styles.container}>
-
       <Camera style={styles.camera} type={type}>
         <View style={styles.buttonContainer}>
           <TouchableOpacity
@@ -38,17 +36,17 @@ export default function Camra({ navigation }) {
           </TouchableOpacity>
         </View>
       </Camera>
-        
-      
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#003f5c',
-    alignItems: 'center',
-    justifyContent: 'center',
+const styles = StyleSheet.create({ 
+  container:{
+    width: "100%",
+    height: "100%"
   },
-});
+  camera: {
+    width: "100%",
+    height: "100px",
+  },
+ }); 

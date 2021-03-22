@@ -13,7 +13,7 @@ export default function Home({ navigation }) {
       />
         <Text>Home Page</Text>
         <Button
-        title="Open Camra" 
+        title="Open Camera" 
         onPress={() => navigation.navigate('Camra')}
       />
         <Button

@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, Button } from 'react-native';
 
@@ -10,10 +9,6 @@ export default function Login({ navigation }) {
       style={{width: 200, height: 200, resizeMode: 'contain'  }} 
       source={ {uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_fstLlGCp8TFFvEy3gLmAwOvttrHPiL8eNQ&usqp=CAU.png"}}
       />
-      <View>
-
-      
-      </View>
       
         {/* <TextInput style={styles.input}
         keyboardType={"email-address"}
@@ -28,8 +23,6 @@ export default function Login({ navigation }) {
         title="Login"
         onPress={() => navigation.navigate('Home')}
       />
-      
-
       
     </View>
   );
